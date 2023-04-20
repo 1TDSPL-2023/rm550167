@@ -65,30 +65,28 @@
             <a href="#"><img src="./img/social-3.png" alt="Logo twitter"></a>
         </nav>
 
-    <div>
-        <form action="" method="get" onsubmit="return false">
-            <fieldset>
-                <legend>Contato</legend>
-                <div>
-                    <label for="idEmail">Email</label>
-                    <input type="email" name="txtEmail" id="idEmail"
-                    required placeholder="Email">
-                </div>
-                <div>
-                    <label for="idNome">Nome</label>
-                    <input type="text" name="txtNome" id="idNome"
-                    required placeholder="Nome">
-                </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-            </fieldset>
+        <div>
+            #action é o caminho da página do backend do servidor, sendo que o ideal é colocar um alias(apelido)
+            <form action="/apelido" method="get" onsubmit="return true">
+                <fieldset>
+                    <legend>Contato</legend>
+                    <div>
+                        <label for="idEmail">Email</label>
+                        <input type="email" name="txtEmail" id="idEmail" required placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="idNome">Nome</label>
+                        <input type="text" name="txtNome" id="idNome" required placeholder="Nome">
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </div>#tudo o que vem depois da "?" é parametro
 
-        </form>
-    </div>
     </footer>
     <!-- RODAPÉ -->
-
 </body>
 
 </html>
