@@ -19,25 +19,34 @@ html{
     font-size: 5rem;
 }
 
-.rodape{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #d9d9d9;
+
+
+/* TABELA */
+
+table{
+  margin: 5% auto;
+  border-collapse: collapse;
 }
 
-.rodape nav{
-  display: flex;
-  margin-top: 4%;
-  justify-content: space-around;
+td,th{
+  border:1px solid #000000;
+  padding: 8px;
 }
 
-.rodape nav img{
-  max-width: 10%;
-  display: block;
-  margin: 0 auto;
+tr:nth-child(even){
+  background-color: #dddddd;
 }
-.rodape nav a:hover{
-  padding: 5% 0;
+tr:nth-child(odd){
+  background-color: #cccccc;
 }
+
+tr:hover{
+  background-color: #1a1616bd;
+  color: #fff;
+}
+
+td[colspan], td[rowspan]{
+  text-align: center;
+}
+
+/* TABELA */
