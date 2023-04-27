@@ -19,27 +19,25 @@ html{
     font-size: 5rem;
 }
 
-/* vw = View Width
-vh = View height 
-    
-*/
-
-/* breakpoint - 630px */
-
-@media(max-width:630px){
-  .cabecalho{
-    flex-direction: column;
-  }
-
-  .cabecalho nav {
-    flex-wrap: nowrap;
-    height: auto;
-  }
-
-  .cabecalho a {
-    padding: 2.5vh 0;
-    font-size: 2rem;
-  }
+.rodape{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d9d9;
 }
 
-/* breakpoint - 630px */
+.rodape nav{
+  display: flex;
+  margin-top: 4%;
+  justify-content: space-around;
+}
+
+.rodape nav img{
+  max-width: 10%;
+  display: block;
+  margin: 0 auto;
+}
+.rodape nav a:hover{
+  padding: 5% 0;
+}
