@@ -79,4 +79,10 @@
 // console.table(frutas);
 
 //Iterando arrays
-let frutas = ["uva","laranja",]
+// let frutas = ["uva","laranja","banana","maçã","kiwi","abacate"];
+// console.log("MINHAS FRUTAS : " + frutas);
+
+
+// frutas.forEach( (fruta)=>{
+//     console.log(fruta);
+// } );
