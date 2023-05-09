@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info</title>
+  <link rel="stylesheet" href="./css/estilo.css">
+  <script src="./js/exercicio.js"></script>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="./img/logo.png" alt="Monitor de computador.">
+        <nav>
+            <a href="#">Item-1</a>
+            <a href="#">Item-2</a>
+            <a href="#">Item-3</a>
+        </nav>
+
+    </header>
+
+    <h2 class="tit-sec">Informações Gerais</h2>
+    <button onclick="mudarCor()">Mudar cor de fundo</button>
+    
+    <form onsubmit="event.preventDefault(); adicionarItem();">
+        <input type="text">
+        <button type="submit">Enviar</button>
+      </form>
+      
+      <ul></ul>
+    <img id="myImage" src="./img/lobo1.jpg" alt="Imagem 1">
+    <button onclick="trocarImagem()">Trocar imagem</button>
+
+    <button onclick="exibirMensagem()">Exiba uma mensagem</button>
+    <p id="mensagem"></p>
+    <button onclick="ocultarElemento()">Ocultar Elemento</button>
+    <div id="elemento">Este é um elemento HTML que pode ser ocultado</div>
+    
+
+
+    <footer class="rodape">
+        
+        <h2>Fale Conosco</h2>
+
+        <div>
+            <form action="/" method="post" onsubmit="return true">
+                <fieldset>
+                    <legend>Contato</legend>
+                    <div>
+                        <label for="idEmail">Email</label>
+                        <input type="email" name="txtEmail" id="idEmail" required placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="idPass">Senha</label>
+                        <input type="password" name="txtPass" id="idPass" required placeholder="Senha">
+                    </div>
+                    <div>
+                        <label for="idGrava">Guardar Dados</label>
+                        <input type="checkbox" name="txtGrava" id="idGrava" required>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <nav>
+            <a href="#"><img src="./img/social-1.png" alt="Logo github"></a>
+            <a href="#"><img src="./img/social-2.png" alt="Logo facebook"></a>
+            <a href="#"><img src="./img/social-3.png" alt="Logo twitter"></a>
+        </nav>
+
+    </footer>
+    <!-- RODAPÉ -->
+</body>
+
+</html>
