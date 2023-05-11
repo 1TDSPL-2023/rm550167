@@ -1,6 +1,23 @@
 
-let nr1 = "10";
-let nr2 = "10";
 
-// console.log( parseInt(nr1) + parseInt(nr2));
-console.log( parseInt(nr1) + parseInt(nr2));
+function insereNumero(botao,visor) {
+
+    const meuBotao = document.getElementById(botao);
+    const meuVisor = document.getElementById(visor);
+
+    meuVisor.value += meuBotao.value;
+
+}
+
+//TRANSFORME A FUNÇÃO EM UMA FUNÇÃO
+function resultado(visor) {
+    const meuVisor = document.getElementById(visor);
+    let novoVisorSemSimbolos = meuVisor.value.split("+");
+ 
+    let total = 0;
+ 
+    novoVisorSemSimbolos.forEach((nr)=>{
+        total +=  parseInt(nr);
+    });
+    console.log(total);
+}
